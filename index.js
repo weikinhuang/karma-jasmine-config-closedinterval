@@ -96,9 +96,6 @@ module.exports = function(config, karmaConfig) {
 
   // set up files with defaults
   const files = [
-    // polyfills
-    require.resolve('babel-polyfill/dist/polyfill'),
-    require.resolve('whatwg-fetch'),
     // jasmine
     require.resolve('jquery'), // jasmine-fixture requires jquery to exist
     require.resolve('jasmine-fixture/dist/jasmine-fixture'),
