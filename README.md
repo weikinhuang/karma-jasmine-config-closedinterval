@@ -10,7 +10,7 @@ npm install --save-dev karma-jasmine-config-closedinterval
 
 ```sh
 // Also install required peer dependencies
-npm install --save-dev karma@1.0.0 
+npm install --save-dev karma@1.0.0
 ```
 
 ## Usage
@@ -18,5 +18,40 @@ npm install --save-dev karma@1.0.0
 **karma.conf.js**
 
 ```js
-// TODO
+const karmaConfigBuilder = require('karma-jasmine-config-closedinterval');
+const webpackConfig = require('./webpack.config.js');
+
+module.exports = function(config) {
+  // generate from base config
+  const karmaConfig = karmaConfigBuilder(config, {
+    files: [
+      // test entrypoint
+      'test/jasmine/**/*.js'
+    ],
+
+    preprocessors: {
+      'test/jasmine/**/*.js': ['webpack', 'sourcemap']
+    },
+
+    webpack: webpackConfig
+  });
+
+  config.set(karmaConfig);
+};
 ```
+
+## Jasmine test helpers
+
+**karma.conf.js**
+
+```js
+{
+  jasmineTestHelpers: {
+    helperName: true
+  }
+}
+```
+
+### Helpers
+
+TODO
