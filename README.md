@@ -10,7 +10,7 @@ npm install --save-dev karma-jasmine-config-closedinterval
 
 ```sh
 // Also install required peer dependencies
-npm install --save-dev babel-polyfill@^6.13.0 jasmine@^2.4.1 jasmine-core@^2.4.1 jasmine-fixture@^2.0.0 jasmine-spec-reporter@^2.7.0 jquery@^3.1.0 karma@^1.2.0 karma-coverage@^1.1.1 karma-jasmine@^1.0.2 karma-mocha-reporter@^2.1.0 karma-phantomjs-launcher@^1.0.1 karma-sourcemap-loader@^0.3.7 karma-webpack@^1.8.0 phantomjs-prebuilt@^2.1.12 whatwg-fetch@^1.0.0 
+npm install --save-dev jasmine@^2.4.1 jasmine-core@^2.4.1 jasmine-fixture@^2.0.0 jasmine-spec-reporter@^2.7.0 jquery@^3.1.0 karma@^1.2.0 karma-coverage@^1.1.1 karma-jasmine@^1.0.2 karma-mocha-reporter@^2.1.0 karma-phantomjs-launcher@^1.0.1 karma-sourcemap-loader@^0.3.7 karma-webpack@^1.8.0 phantomjs-prebuilt@^2.1.12 
 ```
 
 ## Usage
