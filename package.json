@@ -1,0 +1,23 @@
+{
+  "name": "karma-jasmine-config-closedinterval",
+  "version": "0.0.0",
+  "description": "base karma + jasmine configuration for ClosedInterval",
+  "main": "index.js",
+  "scripts": {
+    "version": "echo Updating README.md && bash util/version.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weikinhuang/karma-jasmine-config-closedinterval.git"
+  },
+  "author": "Wei Kin Huang",
+  "license": "MIT",
+  "homepage": "https://github.com/weikinhuang/karma-jasmine-config-closedinterval",
+  "engines": {
+    "npm": ">=3.0.0"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+  }
+}
